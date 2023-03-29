@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-image:url(Imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+header{
+    width: 100%;
+    height: 50vh;
+    background-image: url(Imagenes/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+nav{
+    height: 100%;
+    max-width: 1200px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Logo{
+    width: 30px;
+    margin-left: 20px;
+}
+.bar-btn{
+    font-size: 25px;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    text-shadow: 3px 3px 25px #00ffff;
+    background: rgba(60, 60, 60, 0.95);
+    text-align: center;
+    transition: all 0.5s;
+}
+.nav-menu li{
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all 0.5s;
+}
+.nav-menu li a{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;    
+    font-weight: 600;
+}
+.nav-menu li a.active,
+.nav-menu li a:hover{
+    color: #00ffff;
+    transition: 0.3s;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .nav-menu{
+    height: 100vh;
+}
+#check:checked ~ .nav-menu li{
+    display: block;
+    padding: 20px;
+}
+.banner-text{
+    text-align:center;
+}
+.title{
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 60px;
+    color:white;
+    text-shadow: 2px 2px 40px black;
+    text-align: center;
+}
+.banner-text{
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.banner-text p{
+    font-size: 24px;
+    color: white;
+    text-shadow: 3px 3px 30px black;
+    text-align: center;
+
+}
+.separador{    
+    display: flex;
+    justify-content: center;
+    text-align:center ;
+    padding: 10px;
+    color:black;
+    text-shadow: 2px 2px 10px blue;
+    background-color: beige;
+}
+.Videojuegos{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+}
+.Videojuegos img{
+    width: 100%;
+    height: 180px;
+}
+.Nombre {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin: 10px 0;
+}
+.Precio{
+    color: red;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0;
+}
+.btn-comprar {        
+    width: 120px;
+    border-radius: 10px;
+    background-color: chartreuse;
+    outline:rgba(0, 0, 0, 0); 
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    margin-left: 150px;
+    border: 2px solid black;
+}
+.btn-comprar:hover {
+    background-color: #00ffff;
+}
+.Redes {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: beige;
+}
+.Redes p{
+    text-align:center;
+    font-size: 35px;
+    padding-bottom: 20px;
+    color:black;
+    text-shadow: 2px 2px 10px blue;
+}
+.links {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.links a {
+    margin: 0 40px;
+    color: black;
+}
+.links a i {
+    font-size: 1.5rem;
+}
+.footer-links a {
+    color:black;
+}
+.footer-links {
+    background: cornflowerblue;
+    font-size: 15px;
+    padding: 35px 0;
+}
+.footer-container {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.footer-container ul {
+    margin: auto;
+}
+.footer-container ul li {
+    line-height: 1.2;
+}
+.footer-container ul li a{
+    font-size: 18px;
+}
+.pie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.pie-pagina{
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #4a148c 1px;
+    height: 50px;
+    color: white;
+     
+}
+@media(min-width: 700px){
+    .Logo{
+        margin-left: 0;
+    }
+    header{
+        height: 100vh;        
+    }
+    nav{
+        height: 100px;
+        margin: 0 auto;
+    }
+    .bar-btn{
+        display: none;
+    }
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 40px;
+    }
+    .nav-menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+    .nav-menu li a{
+        font-size: 18px;
+    } 
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .banner-text{
+        padding-top: 180px;
+    } 
+    .banner-text p{
+         padding: 30px 20px;
+    }
+    .separador{
+        padding: 20px;
+    }
+    
+
+}
+@media (max-width:701px){
+    header{
+        height: 100vh;        
+    }
+    nav{
+        height: 100px;
+        margin: 0 auto;
+    }
+    .Videojuegos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Videojuegos-one .content,
+    .Videojuegos-two .content
+    {
+        width: 80%;
+    }
+    .footer-links .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+     }
+}
+@media (max-width:500px) {
+    header{
+        height: 100vh;        
+    }
+    nav{
+        height: 100px;
+        margin: 0 auto;
+    }
+    .Videojuegos{
+        grid-template-columns: 1fr;
+    }
+
+    .Videojuegos img {
+        height: 260px;
+    }
+
+    .Videojuegos-one .content,
+    .Videojuegos-two  .content
+    {
+       width: 100%;
+       padding: 60px 20px;
+    }
+    .footer-links .footer-container {
+        grid-template-columns: repeat(2, 1fr);    }
+}
